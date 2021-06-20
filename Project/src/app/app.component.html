@@ -1,0 +1,127 @@
+
+<!-- this is the sticky menu -->
+<div class="calc-container" style="background-color: #FCFCFF;">
+
+<!-- <div style="background-color: #FCFCFF;"> -->
+
+  <div 
+  #stickyMenu [ngClass]="sticky ? 'sticky' : 'nonsticky'">
+  <span class="menuitemIcon" [ngClass]="sticky ? 'open-icon-small':'open-icon-large'"></span>  
+ 
+<div class="navbarOptions">
+
+  <mat-label class="labelHover">Products</mat-label>
+  <mat-label class="labelHover">Solutions</mat-label>
+  <mat-label class="labelHover">Pricing</mat-label>
+    <button mat-stroked-button class="login-btn">Login</button>
+    <button mat-flat-button class="getStarted-btn">Get Started</button>
+  </div>
+</div>
+
+
+<div [ngClass]="sticky ? 'stickycontent' : 'content'">
+  <div class="inlineView">
+    <div>
+  <div class="super-simple-text">We make it Super Simple</div>
+
+  <span class="underline"></span>
+
+  <img class="handshake-image" src="/assets/icons/collect_img-video.png" alt="handshake icon">
+
+</div>
+<div class="eligibility-group">
+  <div class="eligibility-card">
+<div id="header">Eligibility Criteria</div>
+<br>
+<div style="margin-left:15px">
+  <mat-label>Monthly Income</mat-label><br><br>
+  <strong>₹ {{matslider.value}}</strong><br>
+  <mat-slider color="primary" min="100000" max="300000" step="1" #matslider></mat-slider>
+  <mat-label id="minLimit"> ₹ {{matslider.min}}
+</mat-label>
+<mat-label id="maxLimit"> ₹ {{matslider.max}}
+</mat-label>
+
+</div>
+<br>
+<div style="margin-left:15px">
+  <mat-label>Monthly Expense</mat-label><br><br>
+  <strong>₹ {{matslider2.value}}</strong><br>
+  <mat-slider color="primary" min="0" max="{{matslider.value}}" step="1" #matslider2></mat-slider>
+</div><br>
+<mat-label>Repayment Tenure</mat-label>
+<mat-form-field appearance="standard">
+  <mat-select [(value)]="selected">
+    <mat-option value="option1">3 months</mat-option>
+    <mat-option value="option2">6 months</mat-option>
+    <mat-option value="option3">1 year</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-label style="float:left;margin-top: 5px;">Do you have any existing loans?</mat-label>
+<mat-slide-toggle color="primary" (change)="toggle($event)" [checked]="checked"></mat-slide-toggle>
+
+
+<mat-form-field appearance="standard">
+  <mat-label>EMI of exisitng loan (optional)</mat-label>
+  <input type="number" min="1" max="{{matslider.value}}" [disabled] ="!enable" matInput placeholder="₹15000">
+</mat-form-field>
+  </div>
+  
+
+  <div class="eligibility-sidecard">
+
+    <div style="margin-left: -40px;
+    margin-top: 60px;">
+    <mat-label >Loan Amount</mat-label><br>
+
+    <mat-label  style="font-weight: 700;">₹ 1,00,000</mat-label><br><br>
+  
+    <mat-label  >Your EMI will be</mat-label><br>
+  
+    <mat-label  style="font-weight: 700;">₹ 15,000</mat-label><br><br>
+
+  </div>
+  
+    <button mat-flat-button class="getMoney-btn">GET MONEY</button>
+  </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- </div> -->
+
+<br>
+<!-- <div style="background-color: white;"> -->
+<div class="inlineView">
+<div class="cards-grid" fxLayout="row wrap" fxLayoutAlign="center">
+  <mat-card *ngFor="let card of cards" class="example-card">
+    <mat-card-header>
+      <img mat-card-avatar src="{{card.imageUrl}}" alt="User Avatar" class="example-header-image">
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card-title>{{card.title}}</mat-card-title>
+      <p>
+        {{card.subtitle}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+<div>
+<div class="boost-text">Boost your business with Open</div>
+
+<span class="boost-underline"></span>
+<p id="boost-para">Get your hands on a term loan that’s crafted for your business</p>
+
+<button mat-stroked-button class="open-acc-btn">Get an Open Account</button>
+
+
+</div>
+</div>
+
+
+<!-- </div> -->
+</div>

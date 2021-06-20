@@ -1,0 +1,1059 @@
+/* media screen 1366 starts here */
+@media  screen and (max-width: 1366px) {
+.sticky{
+  position: sticky;
+  top: 0;
+  font-size: 14px;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+       box-shadow: 0 4px 6px -6px black;
+  transition: background-color 0.3s;
+  z-index:10;
+}
+
+.nonsticky{
+  position: sticky;
+  top: 20px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  width: 100%;
+  background-color: transparent;
+}
+
+.content{
+  margin-top: 115px;
+
+  .super-simple-text{
+    font-weight: 500;
+    font-size: 26px;
+    width: 333px;
+    margin-left: 120px
+}
+}
+
+.stickycontent{
+margin-top: 115px;
+
+.super-simple-text{
+  font-weight: 500;
+  font-size: 26px;
+  width: 333px;
+  margin-left: 120px
+}
+}
+
+.menuitemIcon {
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.open-icon-small {
+background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 60px;
+margin-left: 75px;
+width: 55px;
+height: 55px;
+transition: background-size 0.3s
+
+}
+
+.open-icon-large {
+background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 80px;
+margin-left: 75px;
+width: 70px;
+height: 70px;
+transition: background-size 0.3s
+}
+
+mat-label{
+margin-left:30px;
+top: 68px;
+left: 1030px;
+width: 103px;
+height: 38px;
+text-align: left;
+font: normal normal normal 17px Open Sans;
+letter-spacing: 0px;
+color: #222222;
+}
+
+.login-btn{
+margin-left:30px;
+width: 90px;
+height: 38px;
+box-shadow: 0px 0px 20px #00000033;
+border: 2px solid #663399;
+border-radius: 24px;
+background-color: transparent;
+}
+
+.login-btn:hover{
+background-color: #663399;
+color:white
+}
+
+.getStarted-btn {
+margin-left:24px;
+width: 130px;
+height: 38px;
+background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 20px #00000033;
+border-radius: 24px;
+color:white;
+}
+
+.getStarted-btn:hover{
+background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+}
+
+.calc-container{
+margin-top: -10px;
+margin-left: -8px;
+margin-right: -8px;
+background-image: 
+  url('/assets/icons/blob-small.svg'),
+  url('/assets/icons/circle.svg'),
+  url('/assets/icons/accounting_dots.svg'),
+  url('/assets/icons/accounting_dots.svg'),
+  url('/assets/icons/sol_wave_bg.svg');
+  background-position: top 140px left -80px, top -165px left 619px, top 523px left 292px, top 592px left 1020px, top 845px left 0px;
+  background-repeat: no-repeat;
+  background-size: 320px, 800px, 300px, 300px, 1350px;
+
+}
+
+.navbarOptions{
+padding: 10px 10px 10px 10px;
+// float: right;
+margin-left: 690px;
+}
+
+.super{
+background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 100px;
+margin-left: 65px;
+width: 80px;
+height: 80px;
+}
+
+.underline{
+background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 160px;
+margin-left: 92px;
+width: 80px;
+height: 20px;
+width: 218px;
+height: 20px;
+float: left;
+}
+
+.handshake-image{
+background: transparent url(/assets/icons/collect_img-video.png) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 220px;
+margin-left: 96px;
+width: 80px;
+height: 20px;
+width: 270px;
+height: 30px;
+// float: left;
+}
+
+.eligibility-group{
+margin-left:280px
+}
+
+.eligibility-card{
+height: 425px;
+width: 300px;
+border-radius: 15px;
+background-color: grey;
+/* margin-left: 100px; */
+float: left;
+}
+
+.eligibility-sidecard{
+height: 330px;
+width: 150px;
+margin-top:50px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+background-color: cadetblue;
+margin-left: 10px;
+float: right;
+}
+
+.cards-grid{
+flex-direction: column !important;
+height: 900px;
+width: 750px;
+margin-left:100px
+}
+.example-card {
+margin-bottom: 32px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px #2321321F;
+  z-index: 1;
+  transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+.inlineView{
+display: inline-flex;
+}
+
+.example-card:hover {
+background: transparent url(/assets/icons/Rectangle_2.svg) 0% 0% no-repeat padding-box;
+// background: transparent url(/assets/icons/Rectangle_2.svg) 31% 54% no-repeat padding-box;
+background-position: top -200px left -200px;
+background-size: 800px;
+transition: cubic-bezier(1, 1, 1, 1) 0.2s;
+}
+
+
+// .example-card {
+
+//   background-size: cover;
+//   opacity: 0.7;
+// }
+
+.example-header-image {
+background-size: cover;
+width: 100px;
+height: 100px;
+margin-top: 15px;
+margin-left: 15px;
+}
+
+.mat-card-content{
+margin: 15px;
+font-size: 15px;
+font-weight: 400;
+padding-bottom: 20px;
+}
+
+.mat-card-title{
+font-weight: 600;
+font-size: 15px;
+}
+
+.boost-text{
+font-weight: 500;
+font-size: 26px;
+width: 330px;
+margin-left: 38px;
+margin-top:250px
+}
+.boost-underline{
+background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+background-position: 50% 50%;
+background-color: transparent;
+background-repeat: no-repeat;
+background-size: 160px;
+margin-right: 140px;
+height: 100px;
+width: 218px;
+float: right;
+}
+
+#boost-para{
+width: 292px;
+margin-left: 30px; 
+font-size: 16px;
+}
+
+.open-acc-btn{
+margin-top: 100px;
+margin-left: 30px;
+width: 200px;
+height: 48px;
+border: 2px solid #663399;
+border-radius: 20px;
+background-color: transparent;
+}
+
+.open-acc-btn:hover{
+background-color: #663399;
+color:white
+}
+}
+/* media screen 1366 ENDS here */
+
+
+/* media screen 1366 to 1440 starts here (mac13)*/
+/* (1440x900) WXGA+ Display */
+@media  screen and (min-width: 1367px) and (max-width: 1440px) {
+  .sticky{
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+         box-shadow: 0 4px 6px -6px black;
+    transition: background-color 0.3s;
+    z-index:10;
+  }
+  
+  .nonsticky{
+    position: sticky;
+    top: 50px;//52px
+    font-size: 16px;
+    font-family: 'Montserrat';
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .content{
+    margin-top: 115px;
+  
+    .super-simple-text{
+      font-weight: 500;
+      font-size: 33px;
+      width: 300px;
+      margin-left: 153px;
+      margin-top: 61px;
+  }
+  }
+  
+  .stickycontent{
+  margin-top: 115px;
+  
+  .super-simple-text{
+    font-weight: 500;
+    font-size: 33px;
+    width: 300px;
+    margin-left: 153px;
+    margin-top: 61px;
+  }
+  }
+  
+  .menuitemIcon {
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  
+  .open-icon-small {
+  background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+  background-size: 52px;
+  margin-top: -10px;
+  margin-left: 100px;
+  width: 52px;
+  height: 48px;
+  transition: background-size 0.3s;
+  
+  }
+  
+  .open-icon-large {
+  background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+  // background-position: 50% 50%; 
+  margin-left: 100px;
+  margin-top: -30px;
+  padding:10px;
+  width: 100px;
+  height: 100px;
+  transition: background-size 0.3s;
+  }
+  
+  mat-label{
+  margin-left:37px;
+  // top: 68px;
+  // left: 1030px;
+  // width: 103px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 20px Open Sans;;
+  letter-spacing: 0px;
+  color: #222222;
+  }
+  
+  .login-btn{
+    margin-left: 45px;
+    width: 88px;
+    height: 38px;
+  box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  background-color: transparent;
+  }
+  
+  .login-btn:hover{
+  background-color: #663399;
+  color:white
+  }
+  
+  .getStarted-btn {
+  margin-left:24px;
+  width: 124px;
+  height: 38px;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  color:white;
+  }
+  
+  .getStarted-btn:hover{
+  background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .calc-container{
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-image: 
+    url('/assets/icons/blob-small.svg'),
+    url('/assets/icons/circle.svg'),
+    url('/assets/icons/accounting_dots.svg'),
+    url('/assets/icons/accounting_dots.svg'),
+    url('/assets/icons/sol_wave_bg.svg');
+    background-position: top 177px left -134px, top -179px left 612px, top 637px left 337px, top 718px left 1057px, top 1062px left 0px;
+    background-repeat: no-repeat;
+    background-size: 475px 429px, 890px 924px, 358px 52px, 358px 52px, 1440px 780px;
+  
+  }
+  
+  .navbarOptions{
+  // float: right;
+  margin-left: 710px;
+
+  mat-label:hover{
+    color:#663399;
+    cursor:pointer;
+  }
+  }
+  
+  .super{
+  background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
+  background-position: 50% 50%;
+  background-color: transparent;
+  background-size: 100px;
+  margin-left: 65px;
+  width: 80px;
+  height: 80px;
+  }
+  
+  .underline{
+  background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+  background-size: 177px;
+  margin-left: 153px;
+  height: 12px;
+  width: 177px;
+  float: left;
+  margin-top: 10px;
+  }
+  
+  .handshake-image{
+  background: transparent url(/assets/icons/collect_img-video.png) 0% 0% no-repeat padding-box;
+  background-size: 220px;
+  margin-top: 68px;
+  margin-left: -221px;
+  width: 489px;
+  height: 300px;
+  // float: left;
+  }
+  
+  .eligibility-group{
+    margin-left: 220px;
+    margin-top: 0px;
+  }
+  
+  .eligibility-card{
+    // overflow-y: auto;
+  height: 570px;
+  width: 342px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  /* margin-left: 100px; */
+  float: left;
+  box-shadow: 0px 0px 30px #2321321F;
+
+  #header{
+    font-family: Open Sans;
+    text-align: center;
+    background-color: #FAFBFD;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;;
+  }
+
+  strong{
+    font-size: 24px;
+    // margin-left:15px;
+  }
+  mat-slider{
+    width:300px;
+    // margin-left: 15px;
+  }
+
+  mat-label{
+    font-family:'Montserrat';
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  #minLimit, #maxLimit{
+    color: grey;
+  }
+  #maxLimit{
+    margin-left:180px
+  }
+
+  .mat-form-field{
+    width:300px;
+    margin-left:15px;
+    font-family: 'Montserrat' !important;
+
+
+  }
+
+  mat-select{
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+mat-slide-toggle{
+  margin-left: 20px;
+}
+
+  }
+  
+  .getMoney-btn {
+    width: 124px;
+    height: 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    color:#663399;
+    }
+    
+    .getMoney-btn:hover{
+    background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    color:#FFFFFF
+    }
+  
+  .eligibility-sidecard{
+  height: 320px;
+  width: 160px;
+  margin-top:90px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  margin-left: 10px;
+  float: right;
+  text-align: center;
+  box-shadow: 0px 0px 30px #2321321F;
+
+  mat-label{
+    font-family:'Montserrat';
+    color:#FFFFFF;
+    font-size:15px;
+  }
+  div.textnum{
+    font-weight: 700px;
+  }
+  }
+  
+  .cards-grid{
+    flex-direction: column !important;
+    height: 1158px;
+    width: 730px;
+    margin-left: 143px;
+  }
+  .example-card {
+    width: 300px;
+    height: 218px;
+  margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #2321321F;
+    z-index: 1;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  }
+  .inlineView{
+  display: inline-flex;
+  }
+  
+  .example-card:hover {
+  background: transparent url(/assets/icons/Rectangle_2.svg) 0% 0% no-repeat padding-box;
+  // background: transparent url(/assets/icons/Rectangle_2.svg) 31% 54% no-repeat padding-box;
+  background-position: top -200px left -200px;
+  background-size: 800px;
+  transition: cubic-bezier(1, 1, 1, 1) 0.2s;
+  }
+  
+  .example-header-image {
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+  }
+  
+  .mat-card-content{
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  }
+  
+  .mat-card-title{
+  font-weight: 600;
+  font-size: 15px;
+  }
+  
+  .boost-text{
+    font-weight: 500;
+    font-size: 33px;
+    width: 408px;
+    margin-left: 70px;
+    margin-top: 380px;
+  }
+  .boost-underline{
+  background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+  background-size: 120px;
+  margin-right: 285px;
+  margin-top: 39px;
+  height: 50px;
+  width: 120px;
+  float: right;
+  }
+  
+  #boost-para{
+    width: 352px;
+    margin-left: 70px;
+    font-size: 16px;
+  }
+  
+  .open-acc-btn{
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 279px;
+  height: 58px;
+  border: 2px solid #663399;
+  border-radius: 20px;
+  background-color: transparent;
+  }
+  
+  .open-acc-btn:hover{
+  background-color: #663399;
+  color:white
+  }
+  
+}
+/* media screen 1366 to 1440 ENDS here (mac13)*/
+
+
+
+
+
+
+
+
+
+
+
+/* media screen 1366 to 1440 starts here (UX design)*/
+/* (1440x900) WXGA+ Display */
+@media  screen and (min-width: 1441px) and (max-width: 1920px) {
+  .sticky{
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+         box-shadow: 0 4px 6px -6px black;
+    transition: background-color 0.3s;
+    z-index:10;
+  }
+  
+  .nonsticky{
+    position: sticky;
+    top: 63px;//52px
+    font-size: 16px;
+    font-family: 'Montserrat';
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .content{
+    margin-top: 115px;
+  
+    .super-simple-text{
+      font-weight: 500;
+      font-size: 40px;//33
+      width: 362px;//272
+      margin-left: 189px;//142
+      margin-top: 110px;//91
+  }
+  }
+  
+  .stickycontent{
+  margin-top: 115px;
+  
+  .super-simple-text{
+    font-weight: 500;
+    font-size: 40px;
+    width: 362px;
+    margin-left: 189px;
+    margin-top: 90px;
+  }
+  }
+  
+  .menuitemIcon {
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  
+  .open-icon-small {
+  background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+  // background-position: 50% 50%;
+  background-size: 60px;
+  margin-top: -10px;
+  margin-left: 120px;
+  width: 55px;
+  height: 55px;
+  transition: background-size 0.3s
+  
+  }
+  
+  .open-icon-large {
+  background: transparent url(/assets/icons/logo.png) 0% 0% no-repeat padding-box;
+  // background-position: 50% 50%; 
+  margin-left: 120px;
+  margin-top: -50px;
+  width: 123px;
+  height: 123px;
+  transition: background-size 0.3s;
+  }
+  
+  mat-label{
+  margin-left:50px;
+  top: 68px;
+  left: 1030px;
+  width: 103px;
+  height: 38px;
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;;
+  letter-spacing: 0px;
+  color: #222222;
+  }
+  
+  .login-btn{
+    margin-left: 60px;
+    width: 118px;
+    height: 45px;
+  box-shadow: 0px 0px 20px #00000033;
+  border: 2px solid #663399;
+  border-radius: 24px;
+  background-color: transparent;
+  }
+  
+  .login-btn:hover{
+  background-color: #663399;
+  color:white
+  }
+  
+  .getStarted-btn {
+  margin-left:24px;
+  width: 166px;
+  height: 45px;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  color:white;
+  }
+  
+  .getStarted-btn:hover{
+  background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .calc-container{
+  margin-top: -10px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-image: 
+    url('/assets/icons/blob-small.svg'),
+    url('/assets/icons/circle.svg'),
+    url('/assets/icons/accounting_dots.svg'),
+    url('/assets/icons/accounting_dots.svg'),
+    url('/assets/icons/sol_wave_bg.svg');
+    background-position: top 213px left -179px, //177,-134
+     top -227.9068603516px left 852px, //-190,640
+     top 796px left 462px, //663,347
+     top 936px left 1458px, //780,1096
+        top 1209px left 0px; //1007,0
+    background-repeat: no-repeat;
+    background-size: 571px 572px, //476, 429
+     1183px 1192px,//986, 894
+      430px 70px,//358,52
+       430px 70px,//358,52
+        1920px 936px;//1440,780
+  
+  }
+  
+  .navbarOptions{
+  // float: right;
+  margin-left: 1000px;
+  }
+  
+  .super{
+  background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
+  background-position: 50% 50%;
+  background-color: transparent;
+  background-size: 100px;
+  margin-left: 65px;
+  width: 80px;
+  height: 80px;
+  }
+  
+  .underline{
+  background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+  background-color: transparent;
+  background-size: 236px;
+  margin-left: 190px;
+  height: 12px;
+  width: 236px;
+  float: left;
+  margin-top:10px;
+  }
+  
+  .handshake-image{
+  background: transparent url(/assets/icons/collect_img-video.png) 0% 0% no-repeat padding-box;
+  background-size: 220px;
+  margin-top: 106px;
+  margin-left: -280px;
+  width: 652px;
+  height: 365px;
+  // float: left;
+  }
+  
+  .eligibility-group{
+    margin-left: 312px;
+    margin-top: 88px;
+  }
+  
+  .eligibility-card{
+  height: 675px;
+  width: 456px;
+  border-radius: 20px;
+  background-color: grey;
+  /* margin-left: 100px; */
+  float: left;
+
+  #header{
+    font-family: Open Sans;
+    text-align: center;
+    background-color: #FAFBFD;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;;
+  }
+
+  strong{
+    font-size: 24px;
+    // margin-left:15px;
+  }
+  mat-slider{
+    width:300px;
+    // margin-left: 15px;
+  }
+
+  mat-label{
+    font-family:'Montserrat';
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  #minLimit, #maxLimit{
+    color: grey;
+  }
+  #maxLimit{
+    margin-left:180px
+  }
+
+  .mat-form-field{
+    width:300px;
+    margin-left:15px;
+    font-family: 'Montserrat' !important;
+
+
+  }
+
+  mat-select{
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+  }
+  ::ng-deep .mat-option-text{
+    font-family: 'Montserrat';      
+  }
+
+  ::ng-deep .mat-option-text{
+    font-family: 'Montserrat';      
+  }
+  
+  .eligibility-sidecard{
+  height: 475px;
+  width: 228px;
+  margin-top:100px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  margin-left: 10px;
+  float: right;
+  }
+  
+  .cards-grid{
+    flex-direction: column !important;
+    height: 1158px;
+    width: 944px;
+    margin-left: 190.68px;
+  }
+  .example-card {
+    width: 390px;
+    height: 270px;
+  margin-bottom: 48px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #2321321F;
+    z-index: 1;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  }
+  .inlineView{
+  display: inline-flex;
+  }
+  
+  .example-card:hover {
+  background: transparent url(/assets/icons/Rectangle_2.svg) 0% 0% no-repeat padding-box;
+  // background: transparent url(/assets/icons/Rectangle_2.svg) 31% 54% no-repeat padding-box;
+  background-position: top -200px left -200px;
+  background-size: 800px;
+  transition: cubic-bezier(1, 1, 1, 1) 0.2s;
+  }
+  
+  .example-header-image {
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+  }
+  
+  .mat-card-content{
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  }
+  
+  .mat-card-title{
+  font-weight: 600;
+  font-size: 15px;
+  }
+  
+  .boost-text{
+    font-weight: 500;
+    font-size: 40px;
+    width: 408px;
+    margin-left: 90px;
+    margin-top: 340px;
+  }
+  .boost-underline{
+  background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+    background-size: 120px;
+    margin-right: 285px;
+    margin-top: 52.82px;
+    height: 70px;
+    width: 120px;
+    float: right;
+  }
+  
+  #boost-para{
+    width: 352px;
+    margin-left: 94px;
+    font-size: 18px;
+  }
+  
+  .open-acc-btn{
+  margin-top: 65px;
+  margin-left: 94px;
+  width: 279px;
+  height: 58px;
+  border: 2px solid #663399;
+  border-radius: 20px;
+  background-color: transparent;
+  }
+  
+  .open-acc-btn:hover{
+  background-color: #663399;
+  color:white
+  }
+}
+
+
+/* media screen 1440 to 1920 ENDS here (UX design)*/
+::ng-deep .mat-slider-thumb{
+  border: 5px solid white !important;
+  box-shadow: 0px 0px 12px black !important;
+}
+
+::ng-deep .mat-option-text{
+  font-family: 'Montserrat';      
+}
+
+:host {
+  .mat-slide-toggle {
+    &.mat-checked {
+      ::ng-deep.mat-slide-toggle-bar::after {
+        font-size: 45%;
+        font-weight: 700;
+        color: black;
+        position: absolute;
+        left: 4px;
+        top: -5px;
+      }
+    }
+
+    &:not(.mat-checked) {
+      ::ng-deep.mat-slide-toggle-bar::after {
+        font-size: 45%;
+        font-weight: 700;
+        color: white;
+        position: absolute;
+        left: 21px;
+        top: -5px;
+      }
+    }
+  }
+}

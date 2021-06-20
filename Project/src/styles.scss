@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+@import '~@angular/cdk/overlay-prebuilt.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+    font-family: 'Montserrat';
+    // background-color: #FCFCFF;
+    // scrollbar-width: 1px;
+}
+
+button{
+    font-family: 'Montserrat';
+}
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-card {
+    font-family: 'Montserrat';
+}
+
+::ng-deep .mat-slider-thumb{
+    border: 5px solid white !important;
+    box-shadow: 0px 0px 12px black !important;
+  }
+  
+  .mat-slide-toggle {
+  .mat-slide-toggle-bar {
+    width: 56px;
+    height: 24px;
+    border-radius: 90px;
+    border: 2px solid #7A7A7A;
+    background-color: #FFF;
+
+    .mat-slide-toggle-thumb-container {
+      top: 1px;
+      left: 1px;
+
+      .mat-slide-toggle-thumb {
+        height: 20px;
+        width: 20px;
+        border: 1px solid #4E4E4E;
+      }
+    }
+  }
+
+  &.mat-checked {
+    .mat-slide-toggle-thumb-container {
+      transform: translate3d(30px, 0, 0) !important;
+    }
+
+    .mat-slide-toggle-bar {
+      background:  #663399;
+      border: 2px solid #663399;
+    }
+
+    .mat-slide-toggle-thumb {
+      background: #FFF !important;
+      border: none !important;
+    }
+
+    .mat-slide-toggle-bar::after {
+      font-size: 12px;
+      font-weight: 400;
+      color: #FFF;
+      position: absolute;
+      left: 8px;
+      top: 0px;
+    }
+  }
+
+  &:not(.mat-checked) {
+    .mat-slide-toggle-bar::after {
+      font-size: 12px;
+      font-weight: 400;
+      color: #4E4E4E;
+      position: absolute;
+      left: 30px;
+      top: 0px;
+    }
+  }
+}
