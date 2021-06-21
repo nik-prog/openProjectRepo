@@ -34,9 +34,9 @@
 <div id="header">Eligibility Criteria</div>
 <br>
 <div style="margin-left:15px">
-  <mat-label>Monthly Income</mat-label><br><br>
+  <mat-label>Monthly Income</mat-label><br>
   <strong>₹ {{matslider.value}}</strong><br>
-  <mat-slider color="primary" min="100000" max="300000" step="1" #matslider></mat-slider>
+  <mat-slider color="primary" min="100000" max="300000" step="1" #matslider (input)="updateSetting($event)"></mat-slider>
   <mat-label id="minLimit"> ₹ {{matslider.min}}
 </mat-label>
 <mat-label id="maxLimit"> ₹ {{matslider.max}}
@@ -45,10 +45,10 @@
 </div>
 <br>
 <div style="margin-left:15px">
-  <mat-label>Monthly Expense</mat-label><br><br>
+  <mat-label>Monthly Expense</mat-label><br>
   <strong>₹ {{matslider2.value}}</strong><br>
-  <mat-slider color="primary" min="0" max="{{matslider.value}}" step="1" #matslider2></mat-slider>
-</div><br>
+  <mat-slider color="primary" min="0" [(value)]="expenseSlider" max="{{matslider.value}}" step="1" #matslider2></mat-slider>
+</div>
 <mat-label>Repayment Tenure</mat-label>
 <mat-form-field appearance="standard">
   <mat-select [(value)]="selected">
@@ -71,8 +71,7 @@
 
   <div class="eligibility-sidecard">
 
-    <div style="margin-left: -40px;
-    margin-top: 60px;">
+    <div class="loanInfo">
     <mat-label >Loan Amount</mat-label><br>
 
     <mat-label  style="font-weight: 700;">₹ 1,00,000</mat-label><br><br>

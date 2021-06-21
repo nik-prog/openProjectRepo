@@ -3,6 +3,8 @@
 .sticky{
   position: sticky;
   top: 0;
+  padding-top: 10px;
+  // padding-bottom: 10px;
   font-size: 14px;
   overflow: hidden;
   width: 100%;
@@ -16,7 +18,7 @@
 
 .nonsticky{
   position: sticky;
-  top: 20px;
+  top: 40px;
   font-size: 16px;
   font-family: 'Montserrat';
   width: 100%;
@@ -30,7 +32,8 @@
     font-weight: 500;
     font-size: 26px;
     width: 333px;
-    margin-left: 120px
+    margin-left: 120px;
+    margin-top:30px
 }
 }
 
@@ -41,7 +44,8 @@ margin-top: 115px;
   font-weight: 500;
   font-size: 26px;
   width: 333px;
-  margin-left: 120px
+  margin-left: 120px;
+  margin-top:30px;
 }
 }
 
@@ -74,18 +78,6 @@ margin-left: 75px;
 width: 70px;
 height: 70px;
 transition: background-size 0.3s
-}
-
-mat-label{
-margin-left:30px;
-top: 68px;
-left: 1030px;
-width: 103px;
-height: 38px;
-text-align: left;
-font: normal normal normal 17px Open Sans;
-letter-spacing: 0px;
-color: #222222;
 }
 
 .login-btn{
@@ -127,88 +119,157 @@ background-image:
   url('/assets/icons/accounting_dots.svg'),
   url('/assets/icons/accounting_dots.svg'),
   url('/assets/icons/sol_wave_bg.svg');
-  background-position: top 140px left -80px, top -165px left 619px, top 523px left 292px, top 592px left 1020px, top 845px left 0px;
+  background-position: top 165px left -80px, top -165px left 619px, top 533px left 292px, top 592px left 1020px, top 845px left 0px;
   background-repeat: no-repeat;
-  background-size: 320px, 800px, 300px, 300px, 1350px;
-
+  background-size: 340px 340px, 805px 800px, 300px 40px, 300px 40px, 1350px;
 }
 
 .navbarOptions{
-padding: 10px 10px 10px 10px;
-// float: right;
-margin-left: 690px;
-}
+  margin-left: 710px;
 
-.super{
-background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
-background-position: 50% 50%;
-background-color: transparent;
-background-repeat: no-repeat;
-background-size: 100px;
-margin-left: 65px;
-width: 80px;
-height: 80px;
-}
+  mat-label{
+    margin-left:20px;
+    height: 38px;
+    text-align: left;
+    font: normal normal normal 17px Open Sans;;
+    letter-spacing: 0px;
+    color: #222222;
+    }
+
+  mat-label:hover{
+    color:#663399;
+    cursor:pointer;
+  }
+  }
 
 .underline{
-background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
-background-position: 50% 50%;
-background-color: transparent;
-background-repeat: no-repeat;
-background-size: 160px;
-margin-left: 92px;
-width: 80px;
-height: 20px;
-width: 218px;
-height: 20px;
-float: left;
-}
-
-.handshake-image{
-background: transparent url(/assets/icons/collect_img-video.png) 0% 0% no-repeat padding-box;
-background-position: 50% 50%;
-background-color: transparent;
-background-repeat: no-repeat;
-background-size: 220px;
-margin-left: 96px;
-width: 80px;
-height: 20px;
-width: 270px;
-height: 30px;
-// float: left;
-}
+  background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
+  background-size: 177px;
+  margin-left: 120px;
+  height: 12px;
+  width: 177px;
+  float: left;
+  margin-top: 10px;
+  }
+  
+  .handshake-image{
+  background: transparent url(/assets/icons/collect_img-video.png) 0% 0% no-repeat padding-box;
+  background-size: 220px;
+  margin-top: 68px;
+  margin-left: -215px;
+  width: 400px;
+  height: 240px;
+  }
 
 .eligibility-group{
 margin-left:280px
 }
 
 .eligibility-card{
-height: 425px;
-width: 300px;
-border-radius: 15px;
-background-color: grey;
-/* margin-left: 100px; */
-float: left;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  float: left;
+  box-shadow: 0px 0px 30px #2321321F;
+
+  #header{
+    font-family: Open Sans;
+    text-align: center;
+    background-color: #FAFBFD;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;;
+  }
+
+  strong{
+    font-size: 16px;
+  }
+  mat-slider{
+    width:270px;
+  }
+
+  mat-label{
+    font-family:'Montserrat';
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  #minLimit, #maxLimit{
+    color: grey;
+  }
+  #maxLimit{
+    margin-left:140px
+  }
+
+  .mat-form-field{
+    width:270px;
+    margin-left:15px;
+    margin-top:-15px;
+    font-family: 'Montserrat' !important;
+  }
+
+  mat-select{
+    font-family: "Montserrat";
+    font-weight: 700;
 }
 
-.eligibility-sidecard{
-height: 330px;
-width: 150px;
-margin-top:50px;
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-background-color: cadetblue;
-margin-left: 10px;
-float: right;
+mat-slide-toggle{
+  margin-left: 20px;
 }
+}
+  
+  .getMoney-btn {
+    width: 124px;
+    height: 38px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    color:#663399;
+    }
+    
+    .getMoney-btn:hover{
+    background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    color:#FFFFFF
+    }
+  
+  .eligibility-sidecard{
+  height: 290px;
+  width: 150px;
+  margin-top:70px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  margin-left: 10px;
+  float: right;
+  text-align: center;
+  box-shadow: 0px 0px 30px #2321321F;
+
+  .loanInfo{
+    margin-top:60px;
+  }
+
+  mat-label{
+    font-family:'Montserrat';
+    color:#FFFFFF;
+    font-size:13px;
+  }
+  div.textnum{
+    font-weight: 700px;
+  }
+  }
 
 .cards-grid{
 flex-direction: column !important;
-height: 900px;
-width: 750px;
+height: 800px;
+width: 600px;
 margin-left:100px
 }
 .example-card {
+  width:230px;
+  height:150px;
 margin-bottom: 32px;
   border-radius: 15px;
   box-shadow: 0px 0px 30px #2321321F;
@@ -221,37 +282,28 @@ display: inline-flex;
 
 .example-card:hover {
 background: transparent url(/assets/icons/Rectangle_2.svg) 0% 0% no-repeat padding-box;
-// background: transparent url(/assets/icons/Rectangle_2.svg) 31% 54% no-repeat padding-box;
 background-position: top -200px left -200px;
 background-size: 800px;
 transition: cubic-bezier(1, 1, 1, 1) 0.2s;
 }
 
-
-// .example-card {
-
-//   background-size: cover;
-//   opacity: 0.7;
-// }
-
 .example-header-image {
 background-size: cover;
-width: 100px;
-height: 100px;
-margin-top: 15px;
-margin-left: 15px;
+background-size: cover;
+width: 60px;
+height: 60px;
 }
 
 .mat-card-content{
 margin: 15px;
-font-size: 15px;
+font-size: 12px;
 font-weight: 400;
 padding-bottom: 20px;
 }
 
 .mat-card-title{
 font-weight: 600;
-font-size: 15px;
+font-size: 13px;
 }
 
 .boost-text{
@@ -280,7 +332,7 @@ font-size: 16px;
 }
 
 .open-acc-btn{
-margin-top: 100px;
+margin-top: 20px;
 margin-left: 30px;
 width: 200px;
 height: 48px;
@@ -295,6 +347,24 @@ color:white
 }
 }
 /* media screen 1366 ENDS here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media screen 1366 to 1440 starts here (mac13)*/
@@ -377,17 +447,7 @@ color:white
   transition: background-size 0.3s;
   }
   
-  mat-label{
-  margin-left:37px;
-  // top: 68px;
-  // left: 1030px;
-  // width: 103px;
-  height: 38px;
-  text-align: left;
-  font: normal normal normal 20px Open Sans;;
-  letter-spacing: 0px;
-  color: #222222;
-  }
+
   
   .login-btn{
     margin-left: 45px;
@@ -438,20 +498,19 @@ color:white
   // float: right;
   margin-left: 710px;
 
+  mat-label{
+    margin-left:37px;
+    height: 38px;
+    text-align: left;
+    font: normal normal normal 20px Open Sans;;
+    letter-spacing: 0px;
+    color: #222222;
+    }
+
   mat-label:hover{
     color:#663399;
     cursor:pointer;
   }
-  }
-  
-  .super{
-  background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
-  background-position: 50% 50%;
-  background-color: transparent;
-  background-size: 100px;
-  margin-left: 65px;
-  width: 80px;
-  height: 80px;
   }
   
   .underline{
@@ -480,12 +539,10 @@ color:white
   }
   
   .eligibility-card{
-    // overflow-y: auto;
   height: 570px;
   width: 342px;
   border-radius: 20px;
   background-color: #FFFFFF;
-  /* margin-left: 100px; */
   float: left;
   box-shadow: 0px 0px 30px #2321321F;
 
@@ -503,11 +560,9 @@ color:white
 
   strong{
     font-size: 24px;
-    // margin-left:15px;
   }
   mat-slider{
     width:300px;
-    // margin-left: 15px;
   }
 
   mat-label{
@@ -526,8 +581,6 @@ color:white
     width:300px;
     margin-left:15px;
     font-family: 'Montserrat' !important;
-
-
   }
 
   mat-select{
@@ -538,8 +591,7 @@ color:white
 mat-slide-toggle{
   margin-left: 20px;
 }
-
-  }
+}
   
   .getMoney-btn {
     width: 124px;
@@ -556,7 +608,7 @@ mat-slide-toggle{
     }
   
   .eligibility-sidecard{
-  height: 320px;
+  height: 390px;
   width: 160px;
   margin-top:90px;
   border-top-right-radius: 20px;
@@ -566,6 +618,10 @@ mat-slide-toggle{
   float: right;
   text-align: center;
   box-shadow: 0px 0px 30px #2321321F;
+
+  .loanInfo{
+    margin-top:120px;
+  }
 
   mat-label{
     font-family:'Montserrat';
@@ -755,17 +811,22 @@ mat-slide-toggle{
   transition: background-size 0.3s;
   }
   
-  mat-label{
-  margin-left:50px;
-  top: 68px;
-  left: 1030px;
-  width: 103px;
-  height: 38px;
-  text-align: left;
-  font: normal normal normal 25px/34px Open Sans;;
-  letter-spacing: 0px;
-  color: #222222;
-  }
+  .navbarOptions{
+    margin-left: 1000px;
+    mat-label{
+      margin-left:50px;
+      height: 38px;
+      text-align: left;
+      font: normal normal normal 25px/34px Open Sans;;
+      letter-spacing: 0px;
+      color: #222222;
+      }
+      
+    mat-label:hover{
+      color:#663399;
+      cursor:pointer;
+    }
+    }
   
   .login-btn{
     margin-left: 60px;
@@ -819,22 +880,7 @@ mat-slide-toggle{
         1920px 936px;//1440,780
   
   }
-  
-  .navbarOptions{
-  // float: right;
-  margin-left: 1000px;
-  }
-  
-  .super{
-  background: transparent url(/assets/icons/Super_Simple_text.svg) 0% 0% no-repeat padding-box;
-  background-position: 50% 50%;
-  background-color: transparent;
-  background-size: 100px;
-  margin-left: 65px;
-  width: 80px;
-  height: 80px;
-  }
-  
+
   .underline{
   background: transparent url(/assets/icons/Line-3.svg) 0% 0% no-repeat padding-box;
   background-color: transparent;
@@ -862,67 +908,77 @@ mat-slide-toggle{
   }
   
   .eligibility-card{
-  height: 675px;
-  width: 456px;
-  border-radius: 20px;
-  background-color: grey;
-  /* margin-left: 100px; */
-  float: left;
-
-  #header{
-    font-family: Open Sans;
-    text-align: center;
-    background-color: #FAFBFD;
-    padding: 10px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;;
+    height: 675px;
+    width: 456px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    float: left;
+    box-shadow: 0px 0px 30px #2321321F;
+  
+    #header{
+      font-family: Open Sans;
+      text-align: center;
+      background-color: #FAFBFD;
+      padding: 10px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    strong{
+      font-size: 24px;
+    }
+    mat-slider{
+      width:420px;
+    }
+  
+    mat-label{
+      font-family:'Montserrat';
+      font-size: 14px;
+      margin-top: 20px !important;
+      margin-left: 15px;
+      width: 225px;
+      height: 38px;
+    }
+    #minLimit, #maxLimit{
+      color: grey;
+    }
+    #maxLimit{
+      margin-left:290px
+    }
+  
+    .mat-form-field{
+      width:420px;
+      margin-left:15px;
+      font-family: 'Montserrat' !important;
+    }
+  
+    mat-select{
+      font-family: "Montserrat";
+      font-weight: 700;
   }
-
-  strong{
-    font-size: 24px;
-    // margin-left:15px;
+  
+  mat-slide-toggle{
+    margin-left: 140px;
+    margin-top:20px
   }
-  mat-slider{
-    width:300px;
-    // margin-left: 15px;
   }
-
-  mat-label{
-    font-family:'Montserrat';
-    font-size: 14px;
-    margin-left: 15px;
-  }
-  #minLimit, #maxLimit{
-    color: grey;
-  }
-  #maxLimit{
-    margin-left:180px
-  }
-
-  .mat-form-field{
-    width:300px;
-    margin-left:15px;
-    font-family: 'Montserrat' !important;
-
-
-  }
-
-  mat-select{
-    font-family: "Montserrat";
-    font-weight: 700;
-}
-
-  }
-  ::ng-deep .mat-option-text{
-    font-family: 'Montserrat';      
-  }
-
-  ::ng-deep .mat-option-text{
-    font-family: 'Montserrat';      
-  }
+    
+    .getMoney-btn {
+      width: 166px;
+      height: 45px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px #00000033;
+      border-radius: 24px;
+      color:#663399;
+      }
+      
+      .getMoney-btn:hover{
+      background: transparent linear-gradient(90deg, #663399 0%, #663399 100%) 0% 0% no-repeat padding-box;
+      color:#FFFFFF
+      }
   
   .eligibility-sidecard{
   height: 475px;
@@ -933,6 +989,20 @@ mat-slide-toggle{
   background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
   margin-left: 10px;
   float: right;
+  text-align: center;
+  box-shadow: 0px 0px 30px #2321321F;
+
+  .loanInfo{
+    margin-top:140px;
+  }
+  mat-label{
+    font-family:'Montserrat';
+    color:#FFFFFF;
+    font-size:18px;
+  }
+  div.textnum{
+    font-weight: 700px;
+  }
   }
   
   .cards-grid{

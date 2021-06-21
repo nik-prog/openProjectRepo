@@ -17,6 +17,7 @@ export class AppComponent {
   selected = 'option2';
   checked:boolean=true;
   enable:boolean=true;
+  expenseSlider:any;
 
   constructor() {
     this.cards = [
@@ -53,6 +54,12 @@ imageUrl:'/assets/icons/Covid.png'
     // console.log(evt)
     this.enable = !this.enable
 
+  }
+
+  updateSetting(evt:any){
+    if(evt.value < this.expenseSlider){
+      this.expenseSlider = evt.value
+    }
   }
 
   @HostListener('window:scroll', ['$event'])
